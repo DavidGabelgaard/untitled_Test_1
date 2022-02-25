@@ -1,0 +1,31 @@
+package com.company;
+
+import org.junit.Test;
+
+import java.util.ArrayList;
+
+import static org.junit.Assert.*;
+
+public class Opgave_2Test7 {
+
+    @Test
+    public void returnTheSum() {
+
+        Opgave_2 opgave2 = new Opgave_2();
+
+        ArrayList<Integer> test = new ArrayList<>();
+
+        test.add(56);
+        test.add(13);
+        test.add(8);
+        test.add(15);
+        test.add(75);
+
+       int sum = opgave2.returnTheSum(test);
+
+        assertEquals(167 , sum);
+
+
+
+    }
+}
